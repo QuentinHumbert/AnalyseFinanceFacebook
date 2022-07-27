@@ -1,0 +1,27 @@
+Project 2: Finance
+
+Quandl pour les données à fetch/xmlhttprequest:
+https://data.nasdaq.com/api/v3/datasets/WIKI/FB/data.json
+
+Fetch:
+https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch
+
+Librairy JS pour le graphique:
+
+
+Conception/Maquette:
+
+Faire une maquette PC et Mobile
+
+- Un Titre (Facebook Data)
+- Des Information générale
+- Un Graphique
+- Tableau de 5-10 lignes avec les données afficher au graphique 
+
+Charte Graphique:
+Background: #3b3b3b
+Graphic Color: #FF0000
+Graphic Contour: #CCCCCC
+Text: #FFFFFF
+Fonts: Inria Serif
+
