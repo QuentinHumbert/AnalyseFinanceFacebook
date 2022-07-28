@@ -20,13 +20,36 @@
     </header>
     <main>
         <div id="chart"></div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <td scope="col"> </td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+
+        <template id="datatable">
+            <tr>
+                <td id="record"> </td>
+
+            </tr>
+        </template>
     </main>
     <script>
-        fetch('https://data.nasdaq.com/api/v3/datasets/WIKI/FB/data.json')
+        // Fetch des données sous le format Json
+        fetch('data.json') // Lien du Fetch: https://data.nasdaq.com/api/v3/datasets/WIKI/FB/data.json
             .then(res => res.json())
             .then((out) => {
+                // Fonction de création du graphique
                 function getData(output) {
                     console.log('Output: ', out);
+                    
+                    // Options du graphique ApexChart  
                     const options = {
                         series: [{
                             name: "Price Tag",
@@ -37,7 +60,8 @@
                             height: 350,
                             zoom: {
                                 enabled: true
-                            }
+                            },
+                            foreColor: '#FFFFFF'
                         },
                         dataLabels: {
                             enabled: false
@@ -60,26 +84,25 @@
                         },
                         yaxis: {
                             opposite: true
-                        },
+                        }, 
                         legend: {
                             horizontalAlign: 'left'
                         },
                         colors: [
-                            '#F44336', '#E91E63', '#9C27B0'
+                            '#4267B2' 
                                 ],
                         grid: {
                             row: {
-                                colors: ['#F44336', '#E91E63', '#9C27B0']
-                                },
-                            column: {
-                                colors: ['#F44336', '#E91E63', '#9C27B0']
+                                colors: ['#898F9C', '#898F9C', '#898F9C']
                                 }
-}
+                        }
                     };
-
+                    
+                    //Construction du graphique Apexchart
                     const chart = new ApexCharts(document.querySelector("#chart"), options);
                     chart.render();
                 }
+                // Appel de la fonction de créaction du graphique
                 getData(out);
             }).catch(err => console.error(err));
     </script>

@@ -20,7 +20,7 @@ Faire une maquette PC et Mobile
 
 Charte Graphique:
 Background: #3b3b3b
-Graphic Color: #FF0000
+Graphic Color: #4267B2
 Graphic Contour: #CCCCCC
 Text: #FFFFFF
 Fonts: Inria Serif
