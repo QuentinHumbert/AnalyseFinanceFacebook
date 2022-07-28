@@ -7,7 +7,7 @@ Fetch:
 https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch
 
 Librairy JS pour le graphique:
-
+https://www.chartjs.org/docs/latest/developers/api.html
 
 Conception/Maquette:
 
